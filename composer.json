@@ -1,12 +1,14 @@
 {
-    "name": "yajra/laravel-oci8",
+    "name": "masoud5070/laravel-oci8",
     "description": "Oracle DB driver for Laravel 4|5|6|7 via OCI8",
     "keywords" : ["laravel","oracle","oci8","pdo_oci"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Arjay Angeles",
-            "email": "aqangeles@gmail.com"
+            "name": "Masoud Haji Ali Tajer",
+            "email": "masoudtajer121@gmail.com",
+            "homepage": "https://github.com/masoud5070",
+            "role": "Forker of yajra/laravel-oci8"
         }
     ],
     "require": {
@@ -30,12 +32,12 @@
           "src/helper.php"
         ],
         "psr-4": {
-            "Yajra\\": "src/"
+            "Masoud5070\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yajra\\Oci8\\Tests\\": "tests/"
+            "Masoud5070\\Oci8\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -44,8 +46,8 @@
         },
         "laravel": {
             "providers": [
-                "Yajra\\Oci8\\Oci8ServiceProvider",
-                "Yajra\\Oci8\\Oci8ValidationServiceProvider"
+                "Masoud5070\\Oci8\\Oci8ServiceProvider",
+                "Masoud5070\\Oci8\\Oci8ValidationServiceProvider"
             ]
         }
     },
