@@ -1,12 +1,12 @@
 <?php
 
-namespace Yajra\Oci8\Tests\Database;
+namespace Masoud5070\Oci8\Tests\Database;
 
 use Illuminate\Database\Query\Expression;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
-use Yajra\Oci8\Schema\Grammars\OracleGrammar;
-use Yajra\Oci8\Schema\OracleBlueprint as Blueprint;
+use Masoud5070\Oci8\Schema\Grammars\OracleGrammar;
+use Masoud5070\Oci8\Schema\OracleBlueprint as Blueprint;
 
 class Oci8SchemaGrammarTest extends TestCase
 {

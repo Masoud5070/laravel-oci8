@@ -1,12 +1,12 @@
 <?php
 
-namespace Yajra\Oci8\Query\Grammars;
+namespace Masoud5070\Oci8\Query\Grammars;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Grammars\Grammar;
 use Illuminate\Support\Str;
-use Yajra\Oci8\OracleReservedWords;
+use Masoud5070\Oci8\OracleReservedWords;
 
 class OracleGrammar extends Grammar
 {

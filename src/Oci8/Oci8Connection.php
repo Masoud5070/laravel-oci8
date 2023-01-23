@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8;
+namespace Masoud5070\Oci8;
 
 use Doctrine\DBAL\Driver\OCI8\Driver as DoctrineDriver;
 use Doctrine\DBAL\Version;
@@ -11,14 +11,14 @@ use Illuminate\Support\Str;
 use PDO;
 use PDOStatement;
 use Throwable;
-use Yajra\Oci8\PDO\Oci8Driver;
-use Yajra\Oci8\Query\Grammars\OracleGrammar as QueryGrammar;
-use Yajra\Oci8\Query\OracleBuilder as QueryBuilder;
-use Yajra\Oci8\Query\Processors\OracleProcessor as Processor;
-use Yajra\Oci8\Schema\Grammars\OracleGrammar as SchemaGrammar;
-use Yajra\Oci8\Schema\OracleBuilder as SchemaBuilder;
-use Yajra\Oci8\Schema\Sequence;
-use Yajra\Oci8\Schema\Trigger;
+use Masoud5070\Oci8\PDO\Oci8Driver;
+use Masoud5070\Oci8\Query\Grammars\OracleGrammar as QueryGrammar;
+use Masoud5070\Oci8\Query\OracleBuilder as QueryBuilder;
+use Masoud5070\Oci8\Query\Processors\OracleProcessor as Processor;
+use Masoud5070\Oci8\Schema\Grammars\OracleGrammar as SchemaGrammar;
+use Masoud5070\Oci8\Schema\OracleBuilder as SchemaBuilder;
+use Masoud5070\Oci8\Schema\Sequence;
+use Masoud5070\Oci8\Schema\Trigger;
 use Yajra\Pdo\Oci8\Statement;
 
 class Oci8Connection extends Connection

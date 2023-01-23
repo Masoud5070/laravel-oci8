@@ -1,9 +1,9 @@
 <?php
 
-namespace Yajra\Oci8\Tests\Functional;
+namespace Masoud5070\Oci8\Tests\Functional;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Yajra\Oci8\Tests\TestCase;
+use Masoud5070\Oci8\Tests\TestCase;
 
 class FunctionTest extends TestCase
 {

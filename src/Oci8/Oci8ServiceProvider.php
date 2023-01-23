@@ -1,12 +1,12 @@
 <?php
 
-namespace Yajra\Oci8;
+namespace Masoud5070\Oci8;
 
 use Illuminate\Database\Connection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
-use Yajra\Oci8\Auth\OracleUserProvider;
-use Yajra\Oci8\Connectors\OracleConnector as Connector;
+use Masoud5070\Oci8\Auth\OracleUserProvider;
+use Masoud5070\Oci8\Connectors\OracleConnector as Connector;
 
 class Oci8ServiceProvider extends ServiceProvider
 {

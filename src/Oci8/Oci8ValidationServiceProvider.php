@@ -1,9 +1,9 @@
 <?php
 
-namespace Yajra\Oci8;
+namespace Masoud5070\Oci8;
 
 use Illuminate\Validation\ValidationServiceProvider;
-use Yajra\Oci8\Validation\Oci8DatabasePresenceVerifier;
+use Masoud5070\Oci8\Validation\Oci8DatabasePresenceVerifier;
 
 class Oci8ValidationServiceProvider extends ValidationServiceProvider
 {

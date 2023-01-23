@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\Oci8\Schema;
+namespace Masoud5070\Oci8\Schema;
 
 use Illuminate\Database\Connection;
 use Illuminate\Support\Str;
-use Yajra\Oci8\OracleReservedWords;
+use Masoud5070\Oci8\OracleReservedWords;
 
 class Trigger
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Query\Processors;
+namespace Masoud5070\Oci8\Query\Processors;
 
 use DateTime;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
