@@ -1,11 +1,11 @@
 <?php
 
-namespace Yajra\Oci8\Tests;
+namespace Masoud5070\Oci8\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Yajra\Oci8\Oci8ServiceProvider;
-use Yajra\Oci8\Oci8ValidationServiceProvider;
+use Masoud5070\Oci8\Oci8ServiceProvider;
+use Masoud5070\Oci8\Oci8ValidationServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {

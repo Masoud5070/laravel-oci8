@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Tests;
+namespace Masoud5070\Oci8\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 

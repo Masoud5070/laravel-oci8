@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\PDO;
+namespace Masoud5070\Oci8\PDO;
 
 use Doctrine\DBAL\Driver\AbstractOracleDriver;
 use Illuminate\Database\PDO\Concerns\ConnectsToDatabase;

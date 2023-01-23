@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\Oci8\Schema\Grammars;
+namespace Masoud5070\Oci8\Schema\Grammars;
 
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Grammars\Grammar;
 use Illuminate\Support\Fluent;
 use Illuminate\Support\Str;
-use Yajra\Oci8\OracleReservedWords;
+use Masoud5070\Oci8\OracleReservedWords;
 
 class OracleGrammar extends Grammar
 {

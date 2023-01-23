@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Query;
+namespace Masoud5070\Oci8\Query;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Query\Builder;

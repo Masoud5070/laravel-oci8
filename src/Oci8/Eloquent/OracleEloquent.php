@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\Oci8\Eloquent;
+namespace Masoud5070\Oci8\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as IlluminateQueryBuilder;
-use Yajra\Oci8\Oci8Connection;
-use Yajra\Oci8\Query\Grammars\OracleGrammar;
-use Yajra\Oci8\Query\OracleBuilder as QueryBuilder;
+use Masoud5070\Oci8\Oci8Connection;
+use Masoud5070\Oci8\Query\Grammars\OracleGrammar;
+use Masoud5070\Oci8\Query\OracleBuilder as QueryBuilder;
 
 class OracleEloquent extends Model
 {

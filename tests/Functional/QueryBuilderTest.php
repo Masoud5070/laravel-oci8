@@ -1,12 +1,12 @@
 <?php
 
-namespace Yajra\Oci8\Tests\Functional;
+namespace Masoud5070\Oci8\Tests\Functional;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Yajra\Oci8\Query\Grammars\OracleGrammar;
-use Yajra\Oci8\Query\OracleBuilder as Builder;
-use Yajra\Oci8\Query\Processors\OracleProcessor;
-use Yajra\Oci8\Tests\TestCase;
+use Masoud5070\Oci8\Query\Grammars\OracleGrammar;
+use Masoud5070\Oci8\Query\OracleBuilder as Builder;
+use Masoud5070\Oci8\Query\Processors\OracleProcessor;
+use Masoud5070\Oci8\Tests\TestCase;
 
 class QueryBuilderTest extends TestCase
 {

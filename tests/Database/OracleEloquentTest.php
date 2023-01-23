@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Tests\Database;
+namespace Masoud5070\Oci8\Tests\Database;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Grammars\MySqlGrammar;
@@ -13,9 +13,9 @@ use Illuminate\Database\Query\Processors\SQLiteProcessor;
 use Illuminate\Database\Query\Processors\SqlServerProcessor;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
-use Yajra\Oci8\Query\Grammars\OracleGrammar;
-use Yajra\Oci8\Query\OracleBuilder;
-use Yajra\Oci8\Query\Processors\OracleProcessor;
+use Masoud5070\Oci8\Query\Grammars\OracleGrammar;
+use Masoud5070\Oci8\Query\OracleBuilder;
+use Masoud5070\Oci8\Query\Processors\OracleProcessor;
 
 /**
  * {@inheritdoc}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Tests\Database;
+namespace Masoud5070\Oci8\Tests\Database;
 
 use BadMethodCallException;
 use Illuminate\Database\ConnectionInterface;
@@ -12,9 +12,9 @@ use InvalidArgumentException;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
-use Yajra\Oci8\Query\Grammars\OracleGrammar;
-use Yajra\Oci8\Query\OracleBuilder as Builder;
-use Yajra\Oci8\Query\Processors\OracleProcessor;
+use Masoud5070\Oci8\Query\Grammars\OracleGrammar;
+use Masoud5070\Oci8\Query\OracleBuilder as Builder;
+use Masoud5070\Oci8\Query\Processors\OracleProcessor;
 use Yajra\Pdo\Oci8\Exceptions\Oci8Exception;
 
 class Oci8QueryBuilderTest extends TestCase

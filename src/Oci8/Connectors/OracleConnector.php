@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\Oci8\Connectors;
+namespace Masoud5070\Oci8\Connectors;
 
 use Illuminate\Database\Connectors\Connector;
 use Illuminate\Database\Connectors\ConnectorInterface;
