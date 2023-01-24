@@ -19,7 +19,7 @@ use Masoud5070\Oci8\Schema\Grammars\OracleGrammar as SchemaGrammar;
 use Masoud5070\Oci8\Schema\OracleBuilder as SchemaBuilder;
 use Masoud5070\Oci8\Schema\Sequence;
 use Masoud5070\Oci8\Schema\Trigger;
-use Yajra\Pdo\Oci8\Statement;
+use MahdiAzadbar\Pdo\Oci8\Statement;
 
 class Oci8Connection extends Connection
 {
@@ -31,12 +31,12 @@ class Oci8Connection extends Connection
     protected $schema;
 
     /**
-     * @var \Yajra\Oci8\Schema\Sequence
+     * @var \Masoud5070\Oci8\Schema\Sequence
      */
     protected $sequence;
 
     /**
-     * @var \Yajra\Oci8\Schema\Trigger
+     * @var \Masoud5070\Oci8\Schema\Trigger
      */
     protected $trigger;
 
@@ -107,7 +107,7 @@ class Oci8Connection extends Connection
     /**
      * Get sequence class.
      *
-     * @return \Yajra\Oci8\Schema\Sequence
+     * @return \Masoud5070\Oci8\Schema\Sequence
      */
     public function getSequence()
     {
@@ -117,8 +117,8 @@ class Oci8Connection extends Connection
     /**
      * Set sequence class.
      *
-     * @param  \Yajra\Oci8\Schema\Sequence  $sequence
-     * @return \Yajra\Oci8\Schema\Sequence
+     * @param  \Masoud5070\Oci8\Schema\Sequence  $sequence
+     * @return \Masoud5070\Oci8\Schema\Sequence
      */
     public function setSequence(Sequence $sequence)
     {
@@ -128,7 +128,7 @@ class Oci8Connection extends Connection
     /**
      * Get oracle trigger class.
      *
-     * @return \Yajra\Oci8\Schema\Trigger
+     * @return \Masoud5070\Oci8\Schema\Trigger
      */
     public function getTrigger()
     {
@@ -138,8 +138,8 @@ class Oci8Connection extends Connection
     /**
      * Set oracle trigger class.
      *
-     * @param  \Yajra\Oci8\Schema\Trigger  $trigger
-     * @return \Yajra\Oci8\Schema\Trigger
+     * @param  \Masoud5070\Oci8\Schema\Trigger  $trigger
+     * @return \Masoud5070\Oci8\Schema\Trigger
      */
     public function setTrigger(Trigger $trigger)
     {
@@ -149,7 +149,7 @@ class Oci8Connection extends Connection
     /**
      * Get a schema builder instance for the connection.
      *
-     * @return \Yajra\Oci8\Schema\OracleBuilder
+     * @return \Masoud5070\Oci8\Schema\OracleBuilder
      */
     public function getSchemaBuilder()
     {
@@ -191,7 +191,7 @@ class Oci8Connection extends Connection
     /**
      * Get doctrine driver.
      *
-     * @return \Doctrine\DBAL\Driver\OCI8\Driver|\Yajra\Oci8\PDO\Oci8Driver
+     * @return \Doctrine\DBAL\Driver\OCI8\Driver|\Masoud5070\Oci8\PDO\Oci8Driver
      */
     protected function getDoctrineDriver()
     {
@@ -326,7 +326,7 @@ class Oci8Connection extends Connection
     /**
      * Get the default query grammar instance.
      *
-     * @return \Illuminate\Database\Grammar|\Yajra\Oci8\Query\Grammars\OracleGrammar
+     * @return \Illuminate\Database\Grammar|\Masoud5070\Oci8\Query\Grammars\OracleGrammar
      */
     protected function getDefaultQueryGrammar()
     {
@@ -336,7 +336,7 @@ class Oci8Connection extends Connection
     /**
      * Set the table prefix and return the grammar.
      *
-     * @param  \Illuminate\Database\Grammar|\Yajra\Oci8\Query\Grammars\OracleGrammar|\Yajra\Oci8\Schema\Grammars\OracleGrammar  $grammar
+     * @param  \Illuminate\Database\Grammar|\Masoud5070\Oci8\Query\Grammars\OracleGrammar|\Masoud5070\Oci8\Schema\Grammars\OracleGrammar  $grammar
      * @return \Illuminate\Database\Grammar
      */
     public function withTablePrefix(Grammar $grammar)
@@ -347,7 +347,7 @@ class Oci8Connection extends Connection
     /**
      * Set the schema prefix and return the grammar.
      *
-     * @param  \Illuminate\Database\Grammar|\Yajra\Oci8\Query\Grammars\OracleGrammar|\Yajra\Oci8\Schema\Grammars\OracleGrammar  $grammar
+     * @param  \Illuminate\Database\Grammar|\Masoud5070\Oci8\Query\Grammars\OracleGrammar|\Masoud5070\Oci8\Schema\Grammars\OracleGrammar  $grammar
      * @return \Illuminate\Database\Grammar
      */
     public function withSchemaPrefix(Grammar $grammar)
@@ -370,7 +370,7 @@ class Oci8Connection extends Connection
     /**
      * Get the default schema grammar instance.
      *
-     * @return \Illuminate\Database\Grammar|\Yajra\Oci8\Schema\Grammars\OracleGrammar
+     * @return \Illuminate\Database\Grammar|\Masoud5070\Oci8\Schema\Grammars\OracleGrammar
      */
     protected function getDefaultSchemaGrammar()
     {
@@ -380,7 +380,7 @@ class Oci8Connection extends Connection
     /**
      * Get the default post processor instance.
      *
-     * @return \Yajra\Oci8\Query\Processors\OracleProcessor
+     * @return \Masoud5070\Oci8\Query\Processors\OracleProcessor
      */
     protected function getDefaultPostProcessor()
     {
@@ -474,7 +474,7 @@ class Oci8Connection extends Connection
     /**
      * Bind values to their parameters in the given statement.
      *
-     * @param  \Yajra\Pdo\Oci8\Statement  $statement
+     * @param  \MahdiAzadbar\Pdo\Oci8\Statement  $statement
      * @param  array  $bindings
      * @return void
      */

@@ -161,7 +161,7 @@ class OracleEloquent extends Model
     /**
      * Get a new query builder instance for the connection.
      *
-     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     * @return \Illuminate\Database\Query\Builder|\Masoud5070\Oci8\Query\OracleBuilder
      */
     protected function newBaseQueryBuilder()
     {
