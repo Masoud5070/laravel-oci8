@@ -71,14 +71,14 @@ class OracleBuilder extends Builder
      */
     public function insertLob(array $values, array $binaries, $sequence = 'id')
     {
-        /** @var \Yajra\Oci8\Query\Grammars\OracleGrammar $grammar */
+        /** @var \Masoud5070\Oci8\Query\Grammars\OracleGrammar $grammar */
         $grammar = $this->grammar;
         $sql = $grammar->compileInsertLob($this, $values, $binaries, $sequence);
 
         $values = $this->cleanBindings($values);
         $binaries = $this->cleanBindings($binaries);
 
-        /** @var \Yajra\Oci8\Query\Processors\OracleProcessor $processor */
+        /** @var \Masoud5070\Oci8\Query\Processors\OracleProcessor $processor */
         $processor = $this->processor;
 
         return $processor->saveLob($this, $sql, $values, $binaries);
@@ -96,14 +96,14 @@ class OracleBuilder extends Builder
     {
         $bindings = array_values(array_merge($values, $this->getBindings()));
 
-        /** @var \Yajra\Oci8\Query\Grammars\OracleGrammar $grammar */
+        /** @var \Masoud5070\Oci8\Query\Grammars\OracleGrammar $grammar */
         $grammar = $this->grammar;
         $sql = $grammar->compileUpdateLob($this, $values, $binaries, $sequence);
 
         $values = $this->cleanBindings($bindings);
         $binaries = $this->cleanBindings($binaries);
 
-        /** @var \Yajra\Oci8\Query\Processors\OracleProcessor $processor */
+        /** @var \Masoud5070\Oci8\Query\Processors\OracleProcessor $processor */
         $processor = $this->processor;
 
         return $processor->saveLob($this, $sql, $values, $binaries);
@@ -118,7 +118,7 @@ class OracleBuilder extends Builder
      * @param  mixed  $values
      * @param  string  $boolean
      * @param  bool  $not
-     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     * @return \Illuminate\Database\Query\Builder|\Masoud5070\Oci8\Query\OracleBuilder
      */
     public function whereIn($column, $values, $boolean = 'and', $not = false)
     {
@@ -256,7 +256,7 @@ class OracleBuilder extends Builder
      * @param  mixed  $operator
      * @param  mixed  $value
      * @param  string  $boolean
-     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     * @return \Illuminate\Database\Query\Builder|\Masoud5070\Oci8\Query\OracleBuilder
      */
     public function where($column, $operator = null, $value = null, $boolean = 'and')
     {
@@ -274,7 +274,7 @@ class OracleBuilder extends Builder
      * @param  string  $column
      * @param  mixed  $values
      * @param  string  $boolean
-     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     * @return \Illuminate\Database\Query\Builder|\Masoud5070\Oci8\Query\OracleBuilder
      */
     public function whereNotIn($column, $values, $boolean = 'and')
     {

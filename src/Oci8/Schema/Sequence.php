@@ -7,7 +7,7 @@ use Illuminate\Database\Connection;
 class Sequence
 {
     /**
-     * @var \Illuminate\Database\Connection|\Yajra\Oci8\Oci8Connection
+     * @var \Illuminate\Database\Connection|\Masoud5070\Oci8\Oci8Connection
      */
     protected $connection;
 

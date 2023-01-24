@@ -13,12 +13,12 @@ class OracleAutoIncrementHelper
     protected $connection;
 
     /**
-     * @var \Yajra\Oci8\Schema\Trigger
+     * @var \Masoud5070\Oci8\Schema\Trigger
      */
     protected $trigger;
 
     /**
-     * @var \Yajra\Oci8\Schema\Sequence
+     * @var \Masoud5070\Oci8\Schema\Sequence
      */
     protected $sequence;
 

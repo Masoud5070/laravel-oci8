@@ -6,7 +6,7 @@ use Illuminate\Database\Connectors\Connector;
 use Illuminate\Database\Connectors\ConnectorInterface;
 use Illuminate\Support\Arr;
 use PDO;
-use Yajra\Pdo\Oci8;
+use MahdiAzadbar\Pdo\Oci8;
 
 class OracleConnector extends Connector implements ConnectorInterface
 {

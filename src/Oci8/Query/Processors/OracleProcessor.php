@@ -44,11 +44,11 @@ class OracleProcessor extends Processor
      *
      * @param  Builder  $query
      * @param  string  $sql
-     * @return \PDOStatement|\Yajra\Pdo\Oci8
+     * @return \PDOStatement|\MahdiAzadbar\Pdo\Oci8
      */
     private function prepareStatement(Builder $query, $sql)
     {
-        /** @var \Yajra\Oci8\Oci8Connection $connection */
+        /** @var \Masoud5070\Oci8\Oci8Connection $connection */
         $connection = $query->getConnection();
         $pdo = $connection->getPdo();
 
@@ -69,9 +69,9 @@ class OracleProcessor extends Processor
 
         if (! isset($builderArgs[1][0][$sequence])) {
             if ($builder instanceof EloquentBuilder) {
-                /** @var \Yajra\Oci8\Eloquent\OracleEloquent $model */
+                /** @var \Masoud5070\Oci8\Eloquent\OracleEloquent $model */
                 $model = $builder->getModel();
-                /** @var \Yajra\Oci8\Oci8Connection $connection */
+                /** @var \Masoud5070\Oci8\Oci8Connection $connection */
                 $connection = $model->getConnection();
                 if ($model->sequence && $model->incrementing) {
                     $values[] = (int) $connection->getSequence()->nextValue($model->sequence);
