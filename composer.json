@@ -19,7 +19,7 @@
         "illuminate/pagination": "^9",
         "illuminate/support": "^9",
         "illuminate/validation": "^9",
-        "yajra/laravel-pdo-via-oci8": "^3.0"
+        "mahdiazadbar/laravel-pdo-via-oci8": "^3.0"
     },
     "require-dev": {
         "doctrine/dbal": "^3.3",
