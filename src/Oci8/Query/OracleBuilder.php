@@ -249,6 +249,15 @@ class OracleBuilder extends Builder
         return clone $this;
     }
 
+    /**
+     * Add a basic where clause to the query.
+     *
+     * @param  \Closure|string|array  $column
+     * @param  mixed  $operator
+     * @param  mixed  $value
+     * @param  string  $boolean
+     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     */
     public function where($column, $operator = null, $value = null, $boolean = 'and')
     {
         if ($this->isJsonColumn($column)) {
@@ -259,6 +268,14 @@ class OracleBuilder extends Builder
         return parent::where($column, $operator, $value, $boolean);
     }
 
+    /**
+     * Add a "where not in" clause to the query.
+     *
+     * @param  string  $column
+     * @param  mixed  $values
+     * @param  string  $boolean
+     * @return \Illuminate\Database\Query\Builder|\Yajra\Oci8\Query\OracleBuilder
+     */
     public function whereNotIn($column, $values, $boolean = 'and')
     {
         if ($this->isJsonColumn($column)) {
@@ -270,7 +287,9 @@ class OracleBuilder extends Builder
     }
 
     /**
-     * @param string $column
+     * Get column and json keys.
+     *
+     * @param  string  $column
      * @return array
      */
     private function getJsonColumnAndKeys(string $column): array
@@ -282,10 +301,12 @@ class OracleBuilder extends Builder
     }
 
     /**
-     * @param string $column
+     * Check column is json.
+     *
+     * @param  mixed  $column
      * @return bool
      */
-    private function isJsonColumn(string $column): bool
+    private function isJsonColumn($column): bool
     {
         return is_string($column) && Str::contains($column, '->');
     }
