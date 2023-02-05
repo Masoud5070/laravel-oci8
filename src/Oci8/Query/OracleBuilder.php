@@ -5,7 +5,6 @@ namespace Masoud5070\Oci8\Query;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Expression;
-use Illuminate\Support\Str;
 
 class OracleBuilder extends Builder
 {
@@ -247,67 +246,5 @@ class OracleBuilder extends Builder
     public function clone()
     {
         return clone $this;
-    }
-
-    /**
-     * Add a basic where clause to the query.
-     *
-     * @param  \Closure|string|array  $column
-     * @param  mixed  $operator
-     * @param  mixed  $value
-     * @param  string  $boolean
-     * @return \Illuminate\Database\Query\Builder|\Masoud5070\Oci8\Query\OracleBuilder
-     */
-    public function where($column, $operator = null, $value = null, $boolean = 'and')
-    {
-        if ($this->isJsonColumn($column)) {
-            [$column, $jsonKeys] = $this->getJsonColumnAndKeys($column);
-            return parent::where(parent::raw("json_value($column, '$.$jsonKeys')"), $operator, $value, $boolean);
-        }
-
-        return parent::where($column, $operator, $value, $boolean);
-    }
-
-    /**
-     * Add a "where not in" clause to the query.
-     *
-     * @param  string  $column
-     * @param  mixed  $values
-     * @param  string  $boolean
-     * @return \Illuminate\Database\Query\Builder|\Masoud5070\Oci8\Query\OracleBuilder
-     */
-    public function whereNotIn($column, $values, $boolean = 'and')
-    {
-        if ($this->isJsonColumn($column)) {
-            [$column, $jsonKeys] = $this->getJsonColumnAndKeys($column);
-            return parent::whereNotIn(parent::raw("json_value($column, '$.$jsonKeys')"), $values, $boolean);
-        }
-
-        return parent::whereNotIn($column, $values, $boolean);
-    }
-
-    /**
-     * Get column and json keys.
-     *
-     * @param  string  $column
-     * @return array
-     */
-    private function getJsonColumnAndKeys(string $column): array
-    {
-        $keys = explode('->', $column);
-        $jsonKeys = implode('.', array_slice($keys, 1));
-
-        return [$keys[0], $jsonKeys];
-    }
-
-    /**
-     * Check column is json.
-     *
-     * @param  mixed  $column
-     * @return bool
-     */
-    private function isJsonColumn($column): bool
-    {
-        return is_string($column) && Str::contains($column, '->');
     }
 }
